@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props
+import logo from '../../public/failsalabad.jpeg';
 ---
 <html lang="es">
   <head>
@@ -10,7 +11,7 @@ const { title } = Astro.props
     <nav class="fixed bg-white w-full z-10 border-b border-solid border-gray-300">
         <div class="container mx-auto px-6 py-2 flex justify-between items-center">
           <a href="#" class="font-bold text-2xl lg:text-4xl">
-            <img src="./faisalabad.jpeg" width="60" alt="failsalabad logo">
+            <img src={logo} width="60" alt="failsalabad logo">
           </a>
           <div class="block md:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-gray-500 boder-gray-600 hiver:text-gray-800">
