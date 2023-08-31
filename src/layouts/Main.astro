@@ -10,84 +10,35 @@ import logo from '../../public/failsalabad.jpeg';
   <body>
     <nav class="fixed bg-white w-full z-10 border-b border-solid border-gray-300">
         <div class="container mx-auto px-6 py-2 flex justify-between items-center">
-          <a href="#" class="font-bold text-2xl lg:text-4xl">
-            <img src={logo} width="60" alt="failsalabad logo">
+          <a href="#" class="font-semibold text-blue-950 text-lg lg:text-3xl">
+            FAISALABAD
           </a>
-          <div class="block md:hidden">
+          <!-- <div class="block md:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-gray-500 boder-gray-600 hiver:text-gray-800">
               <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://wwww.w3.org/2000/svg">
                 <title>Menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
-            </button>
+            </button> -->
           </div>
           <div class="hidden md:block">
-            <p>FAILSALABAD</p>
+            <p class="font-semibold text-gray-400 text-lg">CONSTRUCCIONES DEL SURESTE 360</p>
           </div>
         </div>
       </nav>
       
-    <main class="pt-16">
+    <main class="pt-10">
       <slot /> <!-- your content is injected here -->
     </main>
-    <footer class="bg-gray-100">
-        <div class="container mx-auto px-6 pt-10 pb-6">
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Links</h5>
-              <ul class="mb-4">
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">FAQ</a>
-                </li>
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Help</a>
-                </li>
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Support</a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Legal</h5>
-              <ul class="mb-4">
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Terms</a>
-                </li>
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Privacy</a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Social</h5>
-              <ul class="mb-4">
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Facebook</a>
-                </li>
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Linkedin</a>
-                </li>
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Twitter</a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Company</h5>
-              <ul class="mb-4">
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Official Blog</a>
-                </li>
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">About Us</a>
-                </li>
-                <li class="mt-2">
-                  <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div> 
-        </div>
+    <footer class="p-4 bg-white md:px-6 md:py-8 dark:bg-gray-800">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2023 <a href="https://flowbite.com" target="_blank" class="hover:underline">Failsalabad</a>
+        </span>
+        <a href="#" target="_blank" class="flex items-center mb-4 sm:mb-0">
+          <img src={logo} class="h-20 rounded-full" alt="Flowbite Logo" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
